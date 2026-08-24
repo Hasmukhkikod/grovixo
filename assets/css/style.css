@@ -1,0 +1,103 @@
+:root {
+    --ink: #111111;
+    --brand: #3b5bff;
+    --blue: #3b5bff;
+    --navy: #12214f;
+    --body: #60646f;
+    --bg-light: #f6f8fc;
+    --border: #e2e8f5;
+}
+
+body {
+    font-family: "DM Sans", sans-serif;
+    color: var(--ink);
+    background-color: #ffffff;
+}
+
+.font-display { font-family: "DM Sans", sans-serif; }
+.serif { font-family: "Playfair Display", serif; font-weight: 500; font-style: italic; }
+.font-mono { font-family: 'JetBrains Mono', monospace; }
+
+/* Navigation */
+.nav-wrapper {
+    display: flex; align-items: center; justify-content: space-between; position: sticky; top: 14px; z-index: 50;
+    max-width: 1200px; height: 70px; margin: 14px auto 0; padding: 0 14px 0 22px;
+    border: 1px solid var(--border); border-radius: 21px; background: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 14px 40px rgba(16, 36, 84, 0.07); backdrop-filter: blur(16px);
+}
+
+.nav-wrapper:has(.links a:hover) { border-color: #d9e2f7; }
+
+.nav-brand { display: flex; align-items: center; padding: 0 9px 0 1px; font-weight: 700; font-size: 24px; color: var(--navy); text-decoration: none;}
+.nav-brand span { color: var(--blue); }
+
+.nav-links { display: flex; align-items: center; gap: 8px; margin: auto; }
+.nav-links a.nav-item { padding: 8px 14px; border-radius: 8px; font-size: 14px; font-weight: 600; white-space: nowrap; color: #5e6574; text-decoration: none; transition: all 0.2s; }
+.nav-links a.nav-item:hover, .nav-links a.nav-item.active { color: var(--blue); background: rgba(59, 91, 255, 0.05); }
+
+.nav-actions { display: flex; align-items: center; gap: 16px; }
+
+.btn-primary {
+    display: inline-flex; align-items: center; justify-content: center; gap: 8px; padding: 12px 24px;
+    border-radius: 12px; background: linear-gradient(135deg, #4e6bff, #2d4cf1); color: #fff !important;
+    font-weight: 700; text-decoration: none; font-size: 14px; box-shadow: 0 9px 19px rgba(59, 91, 255, 0.2);
+    transition: transform 0.2s, box-shadow 0.2s; border: none; cursor: pointer;
+}
+.btn-primary:hover { transform: translateY(-2px); box-shadow: 0 12px 24px rgba(59, 91, 255, 0.3); }
+
+.btn-outline {
+    display: inline-flex; items-center; justify-content: center; gap: 8px; padding: 12px 24px;
+    border-radius: 12px; background: #fff; color: var(--navy); border: 1px solid var(--border);
+    font-weight: 600; text-decoration: none; font-size: 14px; transition: all 0.2s; cursor: pointer;
+}
+.btn-outline:hover { background: var(--bg-light); border-color: #c9d3e8; }
+
+.section-padding { padding: 100px 0; }
+
+@media(max-width: 1050px) {
+    .nav-wrapper { max-width: calc(100% - 28px); }
+    .nav-links { display: none; }
+}
+
+@media(max-width: 480px) {
+    .nav-wrapper { top: 8px; height: 66px; max-width: calc(100% - 16px); padding: 0 12px; }
+    .btn-primary { padding: 10px 16px; font-size: 13px; }
+}
+
+/* Service Cards */
+.service-card {
+    background: #fff; border: 1px solid var(--border); border-radius: 20px; padding: 32px;
+    transition: all 0.3s; box-shadow: 0 4px 12px rgba(0,0,0,0.02);
+}
+.service-card:hover { border-color: #c4d1f2; transform: translateY(-4px); box-shadow: 0 12px 30px rgba(59, 91, 255, 0.08); }
+.service-icon {
+    width: 48px; height: 48px; border-radius: 12px; background: var(--bg-light); color: var(--blue);
+    display: flex; align-items: center; justify-content: center; margin-bottom: 20px; transition: all 0.3s;
+}
+.service-card:hover .service-icon { background: var(--blue); color: #fff; }
+
+/* Grid Backgrounds for flair (Subtle) */
+.grid-bg {
+    background-image: radial-gradient(#e2e8f5 1px, transparent 1px);
+    background-size: 32px 32px;
+}
+
+/* Marquee Animation */
+@keyframes scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(calc(-250px * 7)); }
+}
+.animate-scroll {
+    animation: scroll 40s linear infinite;
+}
+
+@keyframes marquee {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-100%); }
+}
+.animate-marquee {
+    animation: marquee 30s linear infinite;
+}
+.pause-marquee:hover .animate-marquee {
+    animation-play-state: paused;
+}
