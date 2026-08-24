@@ -134,7 +134,7 @@ $canonical_url = "https://" . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
     <div class="fixed top-6 left-0 w-full z-50 pointer-events-none px-6 mix-blend-difference text-white">
         <div class="max-w-7xl mx-auto flex items-center justify-end">
             <!-- SVG Plus Icon Menu Button -->
-            <button @click="menuOpen = true" class="pointer-events-auto flex items-center justify-center p-2 hover:opacity-70 transition-opacity duration-300">
+            <button @click="menuOpen = true" aria-label="Open Menu" class="pointer-events-auto flex items-center justify-center p-2 hover:opacity-70 transition-opacity duration-300">
                 <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 5v14m-7-7h14"/></svg>
             </button>
         </div>
@@ -158,7 +158,7 @@ $canonical_url = "https://" . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
                         GROVIXO
                     </span>
                 </div>
-                <button @click="menuOpen = false" class="w-12 h-12 rounded-2xl bg-[#1A1A1A] border border-[#2A2A2A] hover:bg-white hover:text-black hover:border-white transition-colors duration-300 flex items-center justify-center text-white">
+                <button @click="menuOpen = false" aria-label="Close Menu" class="w-12 h-12 rounded-2xl bg-[#1A1A1A] border border-[#2A2A2A] hover:bg-white hover:text-black hover:border-white transition-colors duration-300 flex items-center justify-center text-white">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6L6 18M6 6l12 12"/></svg>
                 </button>
             </div>

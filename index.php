@@ -214,10 +214,10 @@ document.addEventListener('DOMContentLoaded', () => {
                             
                             <!-- Faux Chart UI -->
                             <div class="mt-8 bg-slate-50/50 rounded-2xl p-6 border border-slate-100 flex items-end gap-3 h-40 transform translate-y-8 group-hover:translate-y-0 transition-transform duration-500">
-                                <div class="w-1/5 bg-blue-100 rounded-t-xl h-[30%] relative group-hover:h-[40%] transition-all duration-500 delay-100"><div class="absolute -top-6 left-1/2 -translate-x-1/2 text-[10px] font-bold text-slate-400">MAY</div></div>
-                                <div class="w-1/5 bg-blue-200 rounded-t-xl h-[45%] relative group-hover:h-[55%] transition-all duration-500 delay-200"><div class="absolute -top-6 left-1/2 -translate-x-1/2 text-[10px] font-bold text-slate-400">JUN</div></div>
-                                <div class="w-1/5 bg-blue-300 rounded-t-xl h-[35%] relative group-hover:h-[45%] transition-all duration-500 delay-300"><div class="absolute -top-6 left-1/2 -translate-x-1/2 text-[10px] font-bold text-slate-400">JUL</div></div>
-                                <div class="w-1/5 bg-blue-400 rounded-t-xl h-[60%] relative group-hover:h-[75%] transition-all duration-500 delay-150"><div class="absolute -top-6 left-1/2 -translate-x-1/2 text-[10px] font-bold text-slate-400">AUG</div></div>
+                                <div class="w-1/5 bg-blue-100 rounded-t-xl h-[30%] relative group-hover:h-[40%] transition-all duration-500 delay-100"><div class="absolute -top-6 left-1/2 -translate-x-1/2 text-[10px] font-bold text-blue-800">MAY</div></div>
+                                <div class="w-1/5 bg-blue-200 rounded-t-xl h-[45%] relative group-hover:h-[55%] transition-all duration-500 delay-200"><div class="absolute -top-6 left-1/2 -translate-x-1/2 text-[10px] font-bold text-blue-900">JUN</div></div>
+                                <div class="w-1/5 bg-blue-300 rounded-t-xl h-[35%] relative group-hover:h-[45%] transition-all duration-500 delay-300"><div class="absolute -top-6 left-1/2 -translate-x-1/2 text-[10px] font-bold text-blue-900">JUL</div></div>
+                                <div class="w-1/5 bg-blue-400 rounded-t-xl h-[60%] relative group-hover:h-[75%] transition-all duration-500 delay-150"><div class="absolute -top-6 left-1/2 -translate-x-1/2 text-[10px] font-bold text-white">AUG</div></div>
                                 <div class="w-1/5 bg-brand rounded-t-xl h-[85%] relative group-hover:h-[95%] transition-all duration-500 shadow-[0_0_20px_rgba(37,99,235,0.3)] delay-75"><div class="absolute -top-10 left-1/2 -translate-x-1/2 bg-navy text-white text-sm font-bold py-1.5 px-3 rounded-lg shadow-lg transform -translate-y-2 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500 delay-300">+142%</div></div>
                             </div>
                         </div>
@@ -383,117 +383,117 @@ document.addEventListener('DOMContentLoaded', () => {
                 <div class="flex animate-scroll w-max gap-6 px-6 py-8">
                     <!-- Set 1 (14 items) -->
                     <div class="w-[140px] h-[140px] shrink-0 bg-white border border-slate-100 rounded-2xl shadow-sm flex flex-col items-center justify-center gap-3 group hover:-translate-y-2 hover:shadow-lg hover:border-brand/30 transition-all duration-300 cursor-pointer">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg" class="w-12 h-12 group-hover:scale-110 transition-transform duration-300" alt="Figma">
+                        <img loading="lazy" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg" class="w-12 h-12 group-hover:scale-110 transition-transform duration-300" alt="Figma">
                         <span class="text-sm font-bold text-navy">Figma</span>
                     </div>
                     <div class="w-[140px] h-[140px] shrink-0 bg-white border border-slate-100 rounded-2xl shadow-sm flex flex-col items-center justify-center gap-3 group hover:-translate-y-2 hover:shadow-lg hover:border-brand/30 transition-all duration-300 cursor-pointer">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg" class="w-12 h-12 group-hover:scale-110 transition-transform duration-300" alt="Node.js">
+                        <img loading="lazy" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg" class="w-12 h-12 group-hover:scale-110 transition-transform duration-300" alt="Node.js">
                         <span class="text-sm font-bold text-navy">Node.js</span>
                     </div>
                     <div class="w-[140px] h-[140px] shrink-0 bg-white border border-slate-100 rounded-2xl shadow-sm flex flex-col items-center justify-center gap-3 group hover:-translate-y-2 hover:shadow-lg hover:border-brand/30 transition-all duration-300 cursor-pointer">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" class="w-12 h-12 group-hover:scale-110 transition-transform duration-300" alt="AWS">
+                        <img loading="lazy" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" class="w-12 h-12 group-hover:scale-110 transition-transform duration-300" alt="AWS">
                         <span class="text-sm font-bold text-navy">AWS</span>
                     </div>
                     <div class="w-[140px] h-[140px] shrink-0 bg-white border border-brand rounded-2xl shadow-md flex flex-col items-center justify-center gap-3 group hover:-translate-y-2 hover:shadow-lg transition-all duration-300 cursor-pointer">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" class="w-12 h-12 group-hover:scale-110 transition-transform duration-300" alt="TypeScript">
+                        <img loading="lazy" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" class="w-12 h-12 group-hover:scale-110 transition-transform duration-300" alt="TypeScript">
                         <span class="text-sm font-bold text-navy">TypeScript</span>
                     </div>
                     <div class="w-[140px] h-[140px] shrink-0 bg-white border border-slate-100 rounded-2xl shadow-sm flex flex-col items-center justify-center gap-3 group hover:-translate-y-2 hover:shadow-lg hover:border-brand/30 transition-all duration-300 cursor-pointer">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vuejs/vuejs-original.svg" class="w-12 h-12 group-hover:scale-110 transition-transform duration-300" alt="Vue.js">
+                        <img loading="lazy" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vuejs/vuejs-original.svg" class="w-12 h-12 group-hover:scale-110 transition-transform duration-300" alt="Vue.js">
                         <span class="text-sm font-bold text-navy">Vue.js</span>
                     </div>
                     <div class="w-[140px] h-[140px] shrink-0 bg-white border border-slate-100 rounded-2xl shadow-sm flex flex-col items-center justify-center gap-3 group hover:-translate-y-2 hover:shadow-lg hover:border-brand/30 transition-all duration-300 cursor-pointer">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/laravel/laravel-original.svg" class="w-12 h-12 group-hover:scale-110 transition-transform duration-300" alt="Laravel">
+                        <img loading="lazy" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/laravel/laravel-original.svg" class="w-12 h-12 group-hover:scale-110 transition-transform duration-300" alt="Laravel">
                         <span class="text-sm font-bold text-navy">Laravel</span>
                     </div>
                     <div class="w-[140px] h-[140px] shrink-0 bg-white border border-slate-100 rounded-2xl shadow-sm flex flex-col items-center justify-center gap-3 group hover:-translate-y-2 hover:shadow-lg hover:border-brand/30 transition-all duration-300 cursor-pointer">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg" class="w-12 h-12 group-hover:scale-110 transition-transform duration-300" alt="PHP">
-                        <span class="text-sm font-bold text-slate-400">PHP</span>
+                        <img loading="lazy" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg" class="w-12 h-12 group-hover:scale-110 transition-transform duration-300" alt="PHP">
+                        <span class="text-sm font-bold text-slate-500">PHP</span>
                     </div>
                     <div class="w-[140px] h-[140px] shrink-0 bg-white border border-slate-100 rounded-2xl shadow-sm flex flex-col items-center justify-center gap-3 group hover:-translate-y-2 hover:shadow-lg hover:border-brand/30 transition-all duration-300 cursor-pointer">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg" class="w-12 h-12 group-hover:scale-110 transition-transform duration-300" alt="PostgreSQL">
+                        <img loading="lazy" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg" class="w-12 h-12 group-hover:scale-110 transition-transform duration-300" alt="PostgreSQL">
                         <span class="text-sm font-bold text-navy">PostgreSQL</span>
                     </div>
                     <div class="w-[140px] h-[140px] shrink-0 bg-white border border-slate-100 rounded-2xl shadow-sm flex flex-col items-center justify-center gap-3 group hover:-translate-y-2 hover:shadow-lg hover:border-brand/30 transition-all duration-300 cursor-pointer">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/redis/redis-original.svg" class="w-12 h-12 group-hover:scale-110 transition-transform duration-300" alt="Redis">
+                        <img loading="lazy" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/redis/redis-original.svg" class="w-12 h-12 group-hover:scale-110 transition-transform duration-300" alt="Redis">
                         <span class="text-sm font-bold text-navy">Redis</span>
                     </div>
                     <div class="w-[140px] h-[140px] shrink-0 bg-white border border-slate-100 rounded-2xl shadow-sm flex flex-col items-center justify-center gap-3 group hover:-translate-y-2 hover:shadow-lg hover:border-brand/30 transition-all duration-300 cursor-pointer">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg" class="w-12 h-12 group-hover:scale-110 transition-transform duration-300" alt="MongoDB">
+                        <img loading="lazy" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg" class="w-12 h-12 group-hover:scale-110 transition-transform duration-300" alt="MongoDB">
                         <span class="text-sm font-bold text-navy">MongoDB</span>
                     </div>
                     <div class="w-[140px] h-[140px] shrink-0 bg-white border border-slate-100 rounded-2xl shadow-sm flex flex-col items-center justify-center gap-3 group hover:-translate-y-2 hover:shadow-lg hover:border-brand/30 transition-all duration-300 cursor-pointer">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/graphql/graphql-plain.svg" class="w-12 h-12 group-hover:scale-110 transition-transform duration-300" alt="GraphQL">
+                        <img loading="lazy" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/graphql/graphql-plain.svg" class="w-12 h-12 group-hover:scale-110 transition-transform duration-300" alt="GraphQL">
                         <span class="text-sm font-bold text-navy">GraphQL</span>
                     </div>
                     <div class="w-[140px] h-[140px] shrink-0 bg-white border border-slate-100 rounded-2xl shadow-sm flex flex-col items-center justify-center gap-3 group hover:-translate-y-2 hover:shadow-lg hover:border-brand/30 transition-all duration-300 cursor-pointer">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/firebase/firebase-plain.svg" class="w-12 h-12 group-hover:scale-110 transition-transform duration-300" alt="Firebase">
+                        <img loading="lazy" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/firebase/firebase-plain.svg" class="w-12 h-12 group-hover:scale-110 transition-transform duration-300" alt="Firebase">
                         <span class="text-sm font-bold text-navy">Firebase</span>
                     </div>
                     <div class="w-[140px] h-[140px] shrink-0 bg-white border border-slate-100 rounded-2xl shadow-sm flex flex-col items-center justify-center gap-3 group hover:-translate-y-2 hover:shadow-lg hover:border-brand/30 transition-all duration-300 cursor-pointer">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/android/android-original.svg" class="w-12 h-12 group-hover:scale-110 transition-transform duration-300" alt="Android">
+                        <img loading="lazy" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/android/android-original.svg" class="w-12 h-12 group-hover:scale-110 transition-transform duration-300" alt="Android">
                         <span class="text-sm font-bold text-navy">Android</span>
                     </div>
                     <div class="w-[140px] h-[140px] shrink-0 bg-white border border-slate-100 rounded-2xl shadow-sm flex flex-col items-center justify-center gap-3 group hover:-translate-y-2 hover:shadow-lg hover:border-brand/30 transition-all duration-300 cursor-pointer">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/apple/apple-original.svg" class="w-12 h-12 group-hover:scale-110 transition-transform duration-300" alt="Apple">
+                        <img loading="lazy" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/apple/apple-original.svg" class="w-12 h-12 group-hover:scale-110 transition-transform duration-300" alt="Apple">
                         <span class="text-sm font-bold text-navy">Apple</span>
                     </div>
 
                     <!-- Set 2 (Duplicate of Set 1 for seamless scroll) -->
                     <div class="w-[140px] h-[140px] shrink-0 bg-white border border-slate-100 rounded-2xl shadow-sm flex flex-col items-center justify-center gap-3 group hover:-translate-y-2 hover:shadow-lg hover:border-brand/30 transition-all duration-300 cursor-pointer">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg" class="w-12 h-12 group-hover:scale-110 transition-transform duration-300" alt="Figma">
+                        <img loading="lazy" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg" class="w-12 h-12 group-hover:scale-110 transition-transform duration-300" alt="Figma">
                         <span class="text-sm font-bold text-navy">Figma</span>
                     </div>
                     <div class="w-[140px] h-[140px] shrink-0 bg-white border border-slate-100 rounded-2xl shadow-sm flex flex-col items-center justify-center gap-3 group hover:-translate-y-2 hover:shadow-lg hover:border-brand/30 transition-all duration-300 cursor-pointer">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg" class="w-12 h-12 group-hover:scale-110 transition-transform duration-300" alt="Node.js">
+                        <img loading="lazy" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg" class="w-12 h-12 group-hover:scale-110 transition-transform duration-300" alt="Node.js">
                         <span class="text-sm font-bold text-navy">Node.js</span>
                     </div>
                     <div class="w-[140px] h-[140px] shrink-0 bg-white border border-slate-100 rounded-2xl shadow-sm flex flex-col items-center justify-center gap-3 group hover:-translate-y-2 hover:shadow-lg hover:border-brand/30 transition-all duration-300 cursor-pointer">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" class="w-12 h-12 group-hover:scale-110 transition-transform duration-300" alt="AWS">
+                        <img loading="lazy" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" class="w-12 h-12 group-hover:scale-110 transition-transform duration-300" alt="AWS">
                         <span class="text-sm font-bold text-navy">AWS</span>
                     </div>
                     <div class="w-[140px] h-[140px] shrink-0 bg-white border border-brand rounded-2xl shadow-md flex flex-col items-center justify-center gap-3 group hover:-translate-y-2 hover:shadow-lg transition-all duration-300 cursor-pointer">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" class="w-12 h-12 group-hover:scale-110 transition-transform duration-300" alt="TypeScript">
+                        <img loading="lazy" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" class="w-12 h-12 group-hover:scale-110 transition-transform duration-300" alt="TypeScript">
                         <span class="text-sm font-bold text-navy">TypeScript</span>
                     </div>
                     <div class="w-[140px] h-[140px] shrink-0 bg-white border border-slate-100 rounded-2xl shadow-sm flex flex-col items-center justify-center gap-3 group hover:-translate-y-2 hover:shadow-lg hover:border-brand/30 transition-all duration-300 cursor-pointer">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vuejs/vuejs-original.svg" class="w-12 h-12 group-hover:scale-110 transition-transform duration-300" alt="Vue.js">
+                        <img loading="lazy" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vuejs/vuejs-original.svg" class="w-12 h-12 group-hover:scale-110 transition-transform duration-300" alt="Vue.js">
                         <span class="text-sm font-bold text-navy">Vue.js</span>
                     </div>
                     <div class="w-[140px] h-[140px] shrink-0 bg-white border border-slate-100 rounded-2xl shadow-sm flex flex-col items-center justify-center gap-3 group hover:-translate-y-2 hover:shadow-lg hover:border-brand/30 transition-all duration-300 cursor-pointer">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/laravel/laravel-original.svg" class="w-12 h-12 group-hover:scale-110 transition-transform duration-300" alt="Laravel">
+                        <img loading="lazy" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/laravel/laravel-original.svg" class="w-12 h-12 group-hover:scale-110 transition-transform duration-300" alt="Laravel">
                         <span class="text-sm font-bold text-navy">Laravel</span>
                     </div>
                     <div class="w-[140px] h-[140px] shrink-0 bg-white border border-slate-100 rounded-2xl shadow-sm flex flex-col items-center justify-center gap-3 group hover:-translate-y-2 hover:shadow-lg hover:border-brand/30 transition-all duration-300 cursor-pointer">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg" class="w-12 h-12 group-hover:scale-110 transition-transform duration-300" alt="PHP">
-                        <span class="text-sm font-bold text-slate-400">PHP</span>
+                        <img loading="lazy" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg" class="w-12 h-12 group-hover:scale-110 transition-transform duration-300" alt="PHP">
+                        <span class="text-sm font-bold text-slate-500">PHP</span>
                     </div>
                     <div class="w-[140px] h-[140px] shrink-0 bg-white border border-slate-100 rounded-2xl shadow-sm flex flex-col items-center justify-center gap-3 group hover:-translate-y-2 hover:shadow-lg hover:border-brand/30 transition-all duration-300 cursor-pointer">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg" class="w-12 h-12 group-hover:scale-110 transition-transform duration-300" alt="PostgreSQL">
+                        <img loading="lazy" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg" class="w-12 h-12 group-hover:scale-110 transition-transform duration-300" alt="PostgreSQL">
                         <span class="text-sm font-bold text-navy">PostgreSQL</span>
                     </div>
                     <div class="w-[140px] h-[140px] shrink-0 bg-white border border-slate-100 rounded-2xl shadow-sm flex flex-col items-center justify-center gap-3 group hover:-translate-y-2 hover:shadow-lg hover:border-brand/30 transition-all duration-300 cursor-pointer">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/redis/redis-original.svg" class="w-12 h-12 group-hover:scale-110 transition-transform duration-300" alt="Redis">
+                        <img loading="lazy" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/redis/redis-original.svg" class="w-12 h-12 group-hover:scale-110 transition-transform duration-300" alt="Redis">
                         <span class="text-sm font-bold text-navy">Redis</span>
                     </div>
                     <div class="w-[140px] h-[140px] shrink-0 bg-white border border-slate-100 rounded-2xl shadow-sm flex flex-col items-center justify-center gap-3 group hover:-translate-y-2 hover:shadow-lg hover:border-brand/30 transition-all duration-300 cursor-pointer">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg" class="w-12 h-12 group-hover:scale-110 transition-transform duration-300" alt="MongoDB">
+                        <img loading="lazy" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg" class="w-12 h-12 group-hover:scale-110 transition-transform duration-300" alt="MongoDB">
                         <span class="text-sm font-bold text-navy">MongoDB</span>
                     </div>
                     <div class="w-[140px] h-[140px] shrink-0 bg-white border border-slate-100 rounded-2xl shadow-sm flex flex-col items-center justify-center gap-3 group hover:-translate-y-2 hover:shadow-lg hover:border-brand/30 transition-all duration-300 cursor-pointer">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/graphql/graphql-plain.svg" class="w-12 h-12 group-hover:scale-110 transition-transform duration-300" alt="GraphQL">
+                        <img loading="lazy" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/graphql/graphql-plain.svg" class="w-12 h-12 group-hover:scale-110 transition-transform duration-300" alt="GraphQL">
                         <span class="text-sm font-bold text-navy">GraphQL</span>
                     </div>
                     <div class="w-[140px] h-[140px] shrink-0 bg-white border border-slate-100 rounded-2xl shadow-sm flex flex-col items-center justify-center gap-3 group hover:-translate-y-2 hover:shadow-lg hover:border-brand/30 transition-all duration-300 cursor-pointer">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/firebase/firebase-plain.svg" class="w-12 h-12 group-hover:scale-110 transition-transform duration-300" alt="Firebase">
+                        <img loading="lazy" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/firebase/firebase-plain.svg" class="w-12 h-12 group-hover:scale-110 transition-transform duration-300" alt="Firebase">
                         <span class="text-sm font-bold text-navy">Firebase</span>
                     </div>
                     <div class="w-[140px] h-[140px] shrink-0 bg-white border border-slate-100 rounded-2xl shadow-sm flex flex-col items-center justify-center gap-3 group hover:-translate-y-2 hover:shadow-lg hover:border-brand/30 transition-all duration-300 cursor-pointer">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/android/android-original.svg" class="w-12 h-12 group-hover:scale-110 transition-transform duration-300" alt="Android">
+                        <img loading="lazy" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/android/android-original.svg" class="w-12 h-12 group-hover:scale-110 transition-transform duration-300" alt="Android">
                         <span class="text-sm font-bold text-navy">Android</span>
                     </div>
                     <div class="w-[140px] h-[140px] shrink-0 bg-white border border-slate-100 rounded-2xl shadow-sm flex flex-col items-center justify-center gap-3 group hover:-translate-y-2 hover:shadow-lg hover:border-brand/30 transition-all duration-300 cursor-pointer">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/apple/apple-original.svg" class="w-12 h-12 group-hover:scale-110 transition-transform duration-300" alt="Apple">
+                        <img loading="lazy" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/apple/apple-original.svg" class="w-12 h-12 group-hover:scale-110 transition-transform duration-300" alt="Apple">
                         <span class="text-sm font-bold text-navy">Apple</span>
                     </div>
                 </div>
@@ -502,117 +502,117 @@ document.addEventListener('DOMContentLoaded', () => {
                 <div class="flex animate-scroll-reverse w-max gap-6 px-6 py-8">
                     <!-- Set 1 (14 items) -->
                     <div class="w-[140px] h-[140px] shrink-0 bg-white border border-slate-100 rounded-2xl shadow-sm flex flex-col items-center justify-center gap-3 group hover:-translate-y-2 hover:shadow-lg hover:border-brand/30 transition-all duration-300 cursor-pointer">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" class="w-12 h-12 group-hover:scale-110 transition-transform duration-300" alt="React">
+                        <img loading="lazy" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" class="w-12 h-12 group-hover:scale-110 transition-transform duration-300" alt="React">
                         <span class="text-sm font-bold text-navy">React</span>
                     </div>
                     <div class="w-[140px] h-[140px] shrink-0 bg-white border border-slate-100 rounded-2xl shadow-sm flex flex-col items-center justify-center gap-3 group hover:-translate-y-2 hover:shadow-lg hover:border-brand/30 transition-all duration-300 cursor-pointer">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" class="w-12 h-12 group-hover:scale-110 transition-transform duration-300" alt="Tailwind">
+                        <img loading="lazy" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" class="w-12 h-12 group-hover:scale-110 transition-transform duration-300" alt="Tailwind">
                         <span class="text-sm font-bold text-navy">Tailwind</span>
                     </div>
                     <div class="w-[140px] h-[140px] shrink-0 bg-white border border-slate-100 rounded-2xl shadow-sm flex flex-col items-center justify-center gap-3 group hover:-translate-y-2 hover:shadow-lg hover:border-brand/30 transition-all duration-300 cursor-pointer">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg" class="w-12 h-12 group-hover:scale-110 transition-transform duration-300" alt="MySQL">
+                        <img loading="lazy" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg" class="w-12 h-12 group-hover:scale-110 transition-transform duration-300" alt="MySQL">
                         <span class="text-sm font-bold text-navy">MySQL</span>
                     </div>
                     <div class="w-[140px] h-[140px] shrink-0 bg-white border border-slate-100 rounded-2xl shadow-sm flex flex-col items-center justify-center gap-3 group hover:-translate-y-2 hover:shadow-lg hover:border-brand/30 transition-all duration-300 cursor-pointer">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg" class="w-12 h-12 group-hover:scale-110 transition-transform duration-300" alt="Docker">
+                        <img loading="lazy" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg" class="w-12 h-12 group-hover:scale-110 transition-transform duration-300" alt="Docker">
                         <span class="text-sm font-bold text-navy">Docker</span>
                     </div>
                     <div class="w-[140px] h-[140px] shrink-0 bg-white border border-slate-100 rounded-2xl shadow-sm flex flex-col items-center justify-center gap-3 group hover:-translate-y-2 hover:shadow-lg hover:border-brand/30 transition-all duration-300 cursor-pointer">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" class="w-12 h-12 group-hover:scale-110 transition-transform duration-300" alt="JavaScript">
+                        <img loading="lazy" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" class="w-12 h-12 group-hover:scale-110 transition-transform duration-300" alt="JavaScript">
                         <span class="text-sm font-bold text-navy">JavaScript</span>
                     </div>
                     <div class="w-[140px] h-[140px] shrink-0 bg-white border border-slate-100 rounded-2xl shadow-sm flex flex-col items-center justify-center gap-3 group hover:-translate-y-2 hover:shadow-lg hover:border-brand/30 transition-all duration-300 cursor-pointer">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" class="w-12 h-12 group-hover:scale-110 transition-transform duration-300" alt="Python">
+                        <img loading="lazy" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" class="w-12 h-12 group-hover:scale-110 transition-transform duration-300" alt="Python">
                         <span class="text-sm font-bold text-navy">Python</span>
                     </div>
                     <div class="w-[140px] h-[140px] shrink-0 bg-white border border-slate-100 rounded-2xl shadow-sm flex flex-col items-center justify-center gap-3 group hover:-translate-y-2 hover:shadow-lg hover:border-brand/30 transition-all duration-300 cursor-pointer">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" class="w-12 h-12 group-hover:scale-110 transition-transform duration-300" alt="GitHub">
+                        <img loading="lazy" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" class="w-12 h-12 group-hover:scale-110 transition-transform duration-300" alt="GitHub">
                         <span class="text-sm font-bold text-navy">GitHub</span>
                     </div>
                     <div class="w-[140px] h-[140px] shrink-0 bg-white border border-slate-100 rounded-2xl shadow-sm flex flex-col items-center justify-center gap-3 group hover:-translate-y-2 hover:shadow-lg hover:border-brand/30 transition-all duration-300 cursor-pointer">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/angularjs/angularjs-original.svg" class="w-12 h-12 group-hover:scale-110 transition-transform duration-300" alt="Angular">
+                        <img loading="lazy" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/angularjs/angularjs-original.svg" class="w-12 h-12 group-hover:scale-110 transition-transform duration-300" alt="Angular">
                         <span class="text-sm font-bold text-navy">Angular</span>
                     </div>
                     <div class="w-[140px] h-[140px] shrink-0 bg-white border border-slate-100 rounded-2xl shadow-sm flex flex-col items-center justify-center gap-3 group hover:-translate-y-2 hover:shadow-lg hover:border-brand/30 transition-all duration-300 cursor-pointer">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/svelte/svelte-original.svg" class="w-12 h-12 group-hover:scale-110 transition-transform duration-300" alt="Svelte">
+                        <img loading="lazy" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/svelte/svelte-original.svg" class="w-12 h-12 group-hover:scale-110 transition-transform duration-300" alt="Svelte">
                         <span class="text-sm font-bold text-navy">Svelte</span>
                     </div>
                     <div class="w-[140px] h-[140px] shrink-0 bg-white border border-slate-100 rounded-2xl shadow-sm flex flex-col items-center justify-center gap-3 group hover:-translate-y-2 hover:shadow-lg hover:border-brand/30 transition-all duration-300 cursor-pointer">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/gitlab/gitlab-original.svg" class="w-12 h-12 group-hover:scale-110 transition-transform duration-300" alt="GitLab">
+                        <img loading="lazy" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/gitlab/gitlab-original.svg" class="w-12 h-12 group-hover:scale-110 transition-transform duration-300" alt="GitLab">
                         <span class="text-sm font-bold text-navy">GitLab</span>
                     </div>
                     <div class="w-[140px] h-[140px] shrink-0 bg-white border border-slate-100 rounded-2xl shadow-sm flex flex-col items-center justify-center gap-3 group hover:-translate-y-2 hover:shadow-lg hover:border-brand/30 transition-all duration-300 cursor-pointer">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/webpack/webpack-original.svg" class="w-12 h-12 group-hover:scale-110 transition-transform duration-300" alt="Webpack">
+                        <img loading="lazy" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/webpack/webpack-original.svg" class="w-12 h-12 group-hover:scale-110 transition-transform duration-300" alt="Webpack">
                         <span class="text-sm font-bold text-navy">Webpack</span>
                     </div>
                     <div class="w-[140px] h-[140px] shrink-0 bg-white border border-slate-100 rounded-2xl shadow-sm flex flex-col items-center justify-center gap-3 group hover:-translate-y-2 hover:shadow-lg hover:border-brand/30 transition-all duration-300 cursor-pointer">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/kubernetes/kubernetes-plain.svg" class="w-12 h-12 group-hover:scale-110 transition-transform duration-300" alt="Kubernetes">
+                        <img loading="lazy" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/kubernetes/kubernetes-plain.svg" class="w-12 h-12 group-hover:scale-110 transition-transform duration-300" alt="Kubernetes">
                         <span class="text-sm font-bold text-navy">Kubernetes</span>
                     </div>
                     <div class="w-[140px] h-[140px] shrink-0 bg-white border border-slate-100 rounded-2xl shadow-sm flex flex-col items-center justify-center gap-3 group hover:-translate-y-2 hover:shadow-lg hover:border-brand/30 transition-all duration-300 cursor-pointer">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nginx/nginx-original.svg" class="w-12 h-12 group-hover:scale-110 transition-transform duration-300" alt="NGINX">
+                        <img loading="lazy" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nginx/nginx-original.svg" class="w-12 h-12 group-hover:scale-110 transition-transform duration-300" alt="NGINX">
                         <span class="text-sm font-bold text-navy">NGINX</span>
                     </div>
                     <div class="w-[140px] h-[140px] shrink-0 bg-white border border-slate-100 rounded-2xl shadow-sm flex flex-col items-center justify-center gap-3 group hover:-translate-y-2 hover:shadow-lg hover:border-brand/30 transition-all duration-300 cursor-pointer">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/swift/swift-original.svg" class="w-12 h-12 group-hover:scale-110 transition-transform duration-300" alt="Swift">
+                        <img loading="lazy" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/swift/swift-original.svg" class="w-12 h-12 group-hover:scale-110 transition-transform duration-300" alt="Swift">
                         <span class="text-sm font-bold text-navy">Swift</span>
                     </div>
 
                     <!-- Set 2 (Duplicate of Set 1 for seamless scroll) -->
                     <div class="w-[140px] h-[140px] shrink-0 bg-white border border-slate-100 rounded-2xl shadow-sm flex flex-col items-center justify-center gap-3 group hover:-translate-y-2 hover:shadow-lg hover:border-brand/30 transition-all duration-300 cursor-pointer">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" class="w-12 h-12 group-hover:scale-110 transition-transform duration-300" alt="React">
+                        <img loading="lazy" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" class="w-12 h-12 group-hover:scale-110 transition-transform duration-300" alt="React">
                         <span class="text-sm font-bold text-navy">React</span>
                     </div>
                     <div class="w-[140px] h-[140px] shrink-0 bg-white border border-slate-100 rounded-2xl shadow-sm flex flex-col items-center justify-center gap-3 group hover:-translate-y-2 hover:shadow-lg hover:border-brand/30 transition-all duration-300 cursor-pointer">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" class="w-12 h-12 group-hover:scale-110 transition-transform duration-300" alt="Tailwind">
+                        <img loading="lazy" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" class="w-12 h-12 group-hover:scale-110 transition-transform duration-300" alt="Tailwind">
                         <span class="text-sm font-bold text-navy">Tailwind</span>
                     </div>
                     <div class="w-[140px] h-[140px] shrink-0 bg-white border border-slate-100 rounded-2xl shadow-sm flex flex-col items-center justify-center gap-3 group hover:-translate-y-2 hover:shadow-lg hover:border-brand/30 transition-all duration-300 cursor-pointer">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg" class="w-12 h-12 group-hover:scale-110 transition-transform duration-300" alt="MySQL">
+                        <img loading="lazy" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg" class="w-12 h-12 group-hover:scale-110 transition-transform duration-300" alt="MySQL">
                         <span class="text-sm font-bold text-navy">MySQL</span>
                     </div>
                     <div class="w-[140px] h-[140px] shrink-0 bg-white border border-slate-100 rounded-2xl shadow-sm flex flex-col items-center justify-center gap-3 group hover:-translate-y-2 hover:shadow-lg hover:border-brand/30 transition-all duration-300 cursor-pointer">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg" class="w-12 h-12 group-hover:scale-110 transition-transform duration-300" alt="Docker">
+                        <img loading="lazy" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg" class="w-12 h-12 group-hover:scale-110 transition-transform duration-300" alt="Docker">
                         <span class="text-sm font-bold text-navy">Docker</span>
                     </div>
                     <div class="w-[140px] h-[140px] shrink-0 bg-white border border-slate-100 rounded-2xl shadow-sm flex flex-col items-center justify-center gap-3 group hover:-translate-y-2 hover:shadow-lg hover:border-brand/30 transition-all duration-300 cursor-pointer">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" class="w-12 h-12 group-hover:scale-110 transition-transform duration-300" alt="JavaScript">
+                        <img loading="lazy" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" class="w-12 h-12 group-hover:scale-110 transition-transform duration-300" alt="JavaScript">
                         <span class="text-sm font-bold text-navy">JavaScript</span>
                     </div>
                     <div class="w-[140px] h-[140px] shrink-0 bg-white border border-slate-100 rounded-2xl shadow-sm flex flex-col items-center justify-center gap-3 group hover:-translate-y-2 hover:shadow-lg hover:border-brand/30 transition-all duration-300 cursor-pointer">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" class="w-12 h-12 group-hover:scale-110 transition-transform duration-300" alt="Python">
+                        <img loading="lazy" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" class="w-12 h-12 group-hover:scale-110 transition-transform duration-300" alt="Python">
                         <span class="text-sm font-bold text-navy">Python</span>
                     </div>
                     <div class="w-[140px] h-[140px] shrink-0 bg-white border border-slate-100 rounded-2xl shadow-sm flex flex-col items-center justify-center gap-3 group hover:-translate-y-2 hover:shadow-lg hover:border-brand/30 transition-all duration-300 cursor-pointer">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" class="w-12 h-12 group-hover:scale-110 transition-transform duration-300" alt="GitHub">
+                        <img loading="lazy" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" class="w-12 h-12 group-hover:scale-110 transition-transform duration-300" alt="GitHub">
                         <span class="text-sm font-bold text-navy">GitHub</span>
                     </div>
                     <div class="w-[140px] h-[140px] shrink-0 bg-white border border-slate-100 rounded-2xl shadow-sm flex flex-col items-center justify-center gap-3 group hover:-translate-y-2 hover:shadow-lg hover:border-brand/30 transition-all duration-300 cursor-pointer">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/angularjs/angularjs-original.svg" class="w-12 h-12 group-hover:scale-110 transition-transform duration-300" alt="Angular">
+                        <img loading="lazy" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/angularjs/angularjs-original.svg" class="w-12 h-12 group-hover:scale-110 transition-transform duration-300" alt="Angular">
                         <span class="text-sm font-bold text-navy">Angular</span>
                     </div>
                     <div class="w-[140px] h-[140px] shrink-0 bg-white border border-slate-100 rounded-2xl shadow-sm flex flex-col items-center justify-center gap-3 group hover:-translate-y-2 hover:shadow-lg hover:border-brand/30 transition-all duration-300 cursor-pointer">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/svelte/svelte-original.svg" class="w-12 h-12 group-hover:scale-110 transition-transform duration-300" alt="Svelte">
+                        <img loading="lazy" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/svelte/svelte-original.svg" class="w-12 h-12 group-hover:scale-110 transition-transform duration-300" alt="Svelte">
                         <span class="text-sm font-bold text-navy">Svelte</span>
                     </div>
                     <div class="w-[140px] h-[140px] shrink-0 bg-white border border-slate-100 rounded-2xl shadow-sm flex flex-col items-center justify-center gap-3 group hover:-translate-y-2 hover:shadow-lg hover:border-brand/30 transition-all duration-300 cursor-pointer">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/gitlab/gitlab-original.svg" class="w-12 h-12 group-hover:scale-110 transition-transform duration-300" alt="GitLab">
+                        <img loading="lazy" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/gitlab/gitlab-original.svg" class="w-12 h-12 group-hover:scale-110 transition-transform duration-300" alt="GitLab">
                         <span class="text-sm font-bold text-navy">GitLab</span>
                     </div>
                     <div class="w-[140px] h-[140px] shrink-0 bg-white border border-slate-100 rounded-2xl shadow-sm flex flex-col items-center justify-center gap-3 group hover:-translate-y-2 hover:shadow-lg hover:border-brand/30 transition-all duration-300 cursor-pointer">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/webpack/webpack-original.svg" class="w-12 h-12 group-hover:scale-110 transition-transform duration-300" alt="Webpack">
+                        <img loading="lazy" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/webpack/webpack-original.svg" class="w-12 h-12 group-hover:scale-110 transition-transform duration-300" alt="Webpack">
                         <span class="text-sm font-bold text-navy">Webpack</span>
                     </div>
                     <div class="w-[140px] h-[140px] shrink-0 bg-white border border-slate-100 rounded-2xl shadow-sm flex flex-col items-center justify-center gap-3 group hover:-translate-y-2 hover:shadow-lg hover:border-brand/30 transition-all duration-300 cursor-pointer">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/kubernetes/kubernetes-plain.svg" class="w-12 h-12 group-hover:scale-110 transition-transform duration-300" alt="Kubernetes">
+                        <img loading="lazy" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/kubernetes/kubernetes-plain.svg" class="w-12 h-12 group-hover:scale-110 transition-transform duration-300" alt="Kubernetes">
                         <span class="text-sm font-bold text-navy">Kubernetes</span>
                     </div>
                     <div class="w-[140px] h-[140px] shrink-0 bg-white border border-slate-100 rounded-2xl shadow-sm flex flex-col items-center justify-center gap-3 group hover:-translate-y-2 hover:shadow-lg hover:border-brand/30 transition-all duration-300 cursor-pointer">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nginx/nginx-original.svg" class="w-12 h-12 group-hover:scale-110 transition-transform duration-300" alt="NGINX">
+                        <img loading="lazy" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nginx/nginx-original.svg" class="w-12 h-12 group-hover:scale-110 transition-transform duration-300" alt="NGINX">
                         <span class="text-sm font-bold text-navy">NGINX</span>
                     </div>
                     <div class="w-[140px] h-[140px] shrink-0 bg-white border border-slate-100 rounded-2xl shadow-sm flex flex-col items-center justify-center gap-3 group hover:-translate-y-2 hover:shadow-lg hover:border-brand/30 transition-all duration-300 cursor-pointer">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/swift/swift-original.svg" class="w-12 h-12 group-hover:scale-110 transition-transform duration-300" alt="Swift">
+                        <img loading="lazy" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/swift/swift-original.svg" class="w-12 h-12 group-hover:scale-110 transition-transform duration-300" alt="Swift">
                         <span class="text-sm font-bold text-navy">Swift</span>
                     </div>
                 </div>
@@ -763,7 +763,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     ?>
                     <a href="<?= $p['url'] ?>" target="_blank" rel="noopener noreferrer" class="w-[85vw] sm:w-[450px] md:w-[550px] shrink-0 group block relative rounded-[2rem] overflow-hidden border border-slate-200/50 aspect-[4/3] bg-slate-900 shadow-sm hover:shadow-2xl transition-all duration-500">
                         <div class="absolute inset-0 flex items-center justify-center p-0">
-                            <img src="<?= $p['img'] ?>" alt="<?= htmlspecialchars($p['title']) ?>" class="w-full h-full object-cover opacity-90 transition-transform duration-700 group-hover:scale-110">
+                            <img loading="lazy" src="<?= $p['img'] ?>" alt="<?= htmlspecialchars($p['title']) ?>" class="w-full h-full object-cover opacity-90 transition-transform duration-700 group-hover:scale-110">
                         </div>
                         <div class="absolute inset-0 bg-gradient-to-t from-navy/95 via-navy/40 to-transparent opacity-90 group-hover:opacity-100 transition-opacity duration-500"></div>
                         <div class="absolute inset-0 flex flex-col justify-end p-8 sm:p-10 transform transition-transform duration-500 group-hover:-translate-y-2">
@@ -831,7 +831,7 @@ document.addEventListener('DOMContentLoaded', () => {
                             </div>
                             <!-- Card -->
                             <div class="bg-white border border-slate-100 rounded-3xl p-8 pt-10 shadow-[0_4px_20px_rgba(0,0,0,0.03)] group-hover:shadow-xl group-hover:-translate-y-2 group-hover:border-brand/30 transition-all duration-300 relative z-10 overflow-hidden h-full flex flex-col">
-                                <h4 class="text-xl font-bold text-navy mb-4 relative z-10">Discovery & Strategy</h4>
+                                <h3 class="text-xl font-bold text-navy mb-4 relative z-10">Discovery & Strategy</h3>
                                 <p class="text-slate-500 leading-relaxed relative z-10 flex-grow">We deep dive into your business goals, target audience, and market landscape to create a robust foundation for the project.</p>
                                 
                                 <!-- Decorative watermark number -->
@@ -851,7 +851,7 @@ document.addEventListener('DOMContentLoaded', () => {
                             </div>
                             <!-- Card -->
                             <div class="bg-white border border-slate-100 rounded-3xl p-8 pt-10 shadow-[0_4px_20px_rgba(0,0,0,0.03)] group-hover:shadow-xl group-hover:-translate-y-2 group-hover:border-brand/30 transition-all duration-300 relative z-10 overflow-hidden h-full flex flex-col">
-                                <h4 class="text-xl font-bold text-navy mb-4 relative z-10">Design & Prototyping</h4>
+                                <h3 class="text-xl font-bold text-navy mb-4 relative z-10">Design & Prototyping</h3>
                                 <p class="text-slate-500 leading-relaxed relative z-10 flex-grow">Our designers craft stunning visual identities and interactive wireframes, ensuring a flawless user experience before writing any code.</p>
                                 
                                 <!-- Decorative watermark number -->
@@ -871,7 +871,7 @@ document.addEventListener('DOMContentLoaded', () => {
                             </div>
                             <!-- Card -->
                             <div class="bg-gradient-to-br from-brand to-blue-700 border border-brand rounded-3xl p-8 pt-10 shadow-lg group-hover:shadow-2xl transition-all duration-300 group-hover:-translate-y-2 relative z-10 overflow-hidden h-full flex flex-col">
-                                <h4 class="text-xl font-bold text-white mb-4 relative z-10">Development & Launch</h4>
+                                <h3 class="text-xl font-bold text-white mb-4 relative z-10">Development & Launch</h3>
                                 <p class="text-blue-100 leading-relaxed relative z-10 flex-grow">We translate approved designs into fast, scalable, and secure digital products, followed by a smooth and monitored launch.</p>
                                 
                                 <!-- Decorative watermark number (faint white) -->

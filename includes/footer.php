@@ -87,12 +87,12 @@
     <!-- Floating Action Buttons -->
     <div class="fixed bottom-6 right-6 z-50 flex flex-col items-end gap-4 pointer-events-none">
         <!-- Back to Top Button -->
-        <button id="backToTop" class="pointer-events-auto w-12 h-12 bg-white text-navy rounded-full shadow-[0_4px_20px_rgba(0,0,0,0.1)] border border-slate-100 flex items-center justify-center hover:bg-brand hover:text-white transition-all duration-300 transform translate-y-16 opacity-0 focus:outline-none">
+        <button id="backToTop" aria-label="Back to top" class="pointer-events-auto w-12 h-12 bg-white text-navy rounded-full shadow-[0_4px_20px_rgba(0,0,0,0.1)] border border-slate-100 flex items-center justify-center hover:bg-brand hover:text-white transition-all duration-300 transform translate-y-16 opacity-0 focus:outline-none">
             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7"></path></svg>
         </button>
 
         <!-- Help Button -->
-        <a href="https://wa.me/919978740360?text=Hi%20Grovixo!%20I%20would%20like%20to%20discuss%20a%20project%20with%20you." target="_blank" rel="noopener noreferrer" class="pointer-events-auto group relative flex items-center gap-4 focus:outline-none cursor-pointer">
+        <a href="https://wa.me/919978740360?text=Hi%20Grovixo!%20I%20would%20like%20to%20discuss%20a%20project%20with%20you." target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp" class="pointer-events-auto group relative flex items-center gap-4 focus:outline-none cursor-pointer">
             <div class="absolute right-full mr-4 bg-navy text-white text-sm font-bold px-5 py-2.5 rounded-2xl shadow-lg opacity-0 group-hover:opacity-100 group-hover:-translate-x-1 transition-all duration-300 pointer-events-none whitespace-nowrap hidden sm:block">
                 Chat on WhatsApp
                 <!-- Triangle pointer -->
