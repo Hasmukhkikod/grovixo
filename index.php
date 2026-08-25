@@ -19,19 +19,68 @@ include 'includes/header.php';
     <!-- Content overlay -->
     <div id="preloader-content" class="absolute inset-0 flex flex-col items-center justify-center transition-opacity duration-700 pointer-events-none">
         
-        <!-- Premium Brand Reveal -->
-        <div class="overflow-hidden mb-12 flex justify-center">
-            <h1 id="preloader-brand" class="text-transparent bg-clip-text bg-gradient-to-r from-slate-100 to-slate-500 text-5xl md:text-7xl font-display font-black tracking-[0.2em] uppercase translate-y-full opacity-0 transition-all duration-[1200ms] ease-[cubic-bezier(0.16,1,0.3,1)]">
-                GROVIXO
-            </h1>
+        <!-- Hero Logo Animation Core -->
+        <div class="relative flex items-center justify-center mb-10 md:mb-16 w-64 h-64 md:w-80 md:h-80 mx-auto scale-90 sm:scale-100">
+            <!-- Complex futuristic rings -->
+            <svg class="absolute inset-0 w-full h-full animate-[spin_10s_linear_infinite] opacity-60" viewBox="0 0 100 100">
+                <circle cx="50" cy="50" r="48" fill="none" stroke="rgba(255,255,255,0.05)" stroke-width="0.5" />
+                <circle cx="50" cy="50" r="48" fill="none" stroke="url(#loader-grad-outer)" stroke-width="1.5" stroke-dasharray="60 150 40 100" stroke-linecap="round" />
+                <defs>
+                    <linearGradient id="loader-grad-outer" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" stop-color="#3b82f6" />
+                        <stop offset="100%" stop-color="#10b981" />
+                    </linearGradient>
+                </defs>
+            </svg>
+            <svg class="absolute inset-4 w-[calc(100%-32px)] h-[calc(100%-32px)] animate-[spin_7s_linear_infinite_reverse] opacity-80" viewBox="0 0 100 100">
+                <circle cx="50" cy="50" r="45" fill="none" stroke="url(#loader-grad-inner)" stroke-width="2" stroke-dasharray="100 200" stroke-linecap="round" />
+                <defs>
+                    <linearGradient id="loader-grad-inner" x1="100%" y1="0%" x2="0%" y2="100%">
+                        <stop offset="0%" stop-color="#8b5cf6" />
+                        <stop offset="100%" stop-color="#06b6d4" />
+                    </linearGradient>
+                </defs>
+            </svg>
+
+            <!-- Intense Ambient Core Glow (Optimized) -->
+            <div class="absolute inset-0 rounded-full animate-pulse transform-gpu bg-[radial-gradient(circle_at_center,rgba(59,130,246,0.25)_0%,transparent_65%)]"></div>
+
+            <!-- The Logo Container -->
+            <div id="preloader-logo-wrapper" class="relative z-10 scale-125 blur-md opacity-0 transition-all duration-1000 ease-[cubic-bezier(0.16,1,0.3,1)] transform-gpu">
+                <!-- Glowing Logo -->
+                <div class="relative animate-[float_4s_ease-in-out_infinite] transform-gpu">
+                    <img src="assets/images/grovixo_logo.png" alt="Grovixo Logo" fetchpriority="high"
+                         class="h-20 md:h-28 w-auto object-contain brightness-0 invert drop-shadow-[0_0_15px_rgba(255,255,255,0.7)]">
+                </div>
+            </div>
         </div>
         
-        <!-- Sleek Animated Loading Line -->
-        <div class="w-full max-w-[240px] h-[2px] bg-white/5 relative overflow-hidden rounded-full">
-            <div id="preloader-line" class="absolute top-0 left-0 h-full bg-gradient-to-r from-blue-500 via-indigo-500 to-emerald-400 w-0 transition-none rounded-full"></div>
-            <!-- Glow effect on the line -->
-            <div id="preloader-glow" class="absolute top-0 left-0 h-full w-20 bg-white/40 blur-[4px] -translate-x-full mix-blend-overlay"></div>
+        <!-- Futuristic Loading Bar & Data Output -->
+        <div class="mt-8 md:mt-12 flex flex-col items-center w-[85%] max-w-[320px]">
+            <div class="flex justify-between items-end w-full text-[9px] md:text-[10px] font-mono text-slate-400 uppercase tracking-widest mb-3 opacity-0 transition-opacity duration-1000" id="preloader-text-wrap">
+                <div class="flex flex-col gap-1">
+                    <span class="text-blue-400/80">Sequence initiated</span>
+                    <span class="animate-pulse">Loading core modules...</span>
+                </div>
+                <div class="text-right">
+                    <span id="preloader-percent" class="text-lg text-white font-light tracking-normal">0%</span>
+                </div>
+            </div>
+            
+            <div class="w-full h-[1px] bg-white/10 relative overflow-hidden">
+                <div id="preloader-line" class="absolute top-0 left-0 h-full bg-gradient-to-r from-blue-600 via-cyan-400 to-white w-0 transition-none shadow-[0_0_10px_rgba(34,211,238,0.8)]">
+                    <!-- Laser tip -->
+                    <div class="absolute top-1/2 -translate-y-1/2 right-0 w-16 h-[2px] bg-white blur-[2px]"></div>
+                </div>
+            </div>
         </div>
+        
+        <style>
+            @keyframes float {
+                0%, 100% { transform: translateY(0); }
+                50% { transform: translateY(-12px); }
+            }
+        </style>
     </div>
 </div>
 
@@ -40,9 +89,10 @@ document.addEventListener('DOMContentLoaded', () => {
     const preloader = document.getElementById('site-preloader');
     const content = document.getElementById('preloader-content');
     const panels = document.querySelectorAll('.preloader-panel');
-    const brand = document.getElementById('preloader-brand');
+    const logoWrapper = document.getElementById('preloader-logo-wrapper');
     const line = document.getElementById('preloader-line');
-    const glow = document.getElementById('preloader-glow');
+    const textWrap = document.getElementById('preloader-text-wrap');
+    const percentEl = document.getElementById('preloader-percent');
     
     // Quick exit if already shown in session
     if (sessionStorage.getItem('grovixo_preloader_shown')) {
@@ -56,35 +106,53 @@ document.addEventListener('DOMContentLoaded', () => {
         return;
     }
 
-    // 1. Initial Text Reveal (Slides up elegantly)
+    // 1. Hero Logo Reveal
     setTimeout(() => {
-        brand.classList.remove('translate-y-full', 'opacity-0');
-        brand.classList.add('translate-y-0', 'opacity-100');
-    }, 100);
-
-    // 2. Smooth Line Progress (simulating load)
-    let progress = 0;
-    const duration = 2000; // 2 seconds total load simulation
-    const intervalTime = 16; // ~60fps
-    const increment = 100 / (duration / intervalTime);
-    
-    // Add CSS transition to line for smoothness instead of manual width
-    line.style.transition = `width ${duration}ms cubic-bezier(0.25, 1, 0.5, 1)`;
-    glow.style.transition = `transform ${duration}ms linear`;
-    
-    setTimeout(() => {
-        // Trigger the CSS animations
-        line.style.width = '100%';
-        glow.style.transform = 'translateX(240px)';
+        if (logoWrapper) {
+            logoWrapper.classList.remove('scale-125', 'blur-md', 'opacity-0');
+            logoWrapper.classList.add('scale-100', 'blur-none', 'opacity-100');
+        }
         
-        // 3. Exit Animation Sequence
-        setTimeout(() => {
-            // Fade out the content (brand text and line)
-            content.style.opacity = '0';
-            content.style.transform = 'scale(1.05)';
-            content.style.transition = 'all 0.6s cubic-bezier(0.16,1,0.3,1)';
+        textWrap.classList.remove('opacity-0');
+    }, 50);
+
+    // 2. Smooth Line Progress & Counter
+    const duration = 1200; // Optimized duration for Lighthouse Speed Index
+    line.style.transition = `width ${duration}ms cubic-bezier(0.77, 0, 0.175, 1)`;
+    
+    // Percentage counter animation
+    let startTimestamp = null;
+    const step = (timestamp) => {
+        if (!startTimestamp) startTimestamp = timestamp;
+        const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+        
+        // Custom easing for numbers
+        const easeProgress = progress < 0.5 
+            ? 4 * progress * progress * progress 
+            : 1 - Math.pow(-2 * progress + 2, 3) / 2;
             
-            // 4. Slide panels up sequentially to reveal site
+        percentEl.innerText = Math.floor(easeProgress * 100) + '%';
+        
+        if (progress < 1) {
+            window.requestAnimationFrame(step);
+        } else {
+            percentEl.innerText = '100%';
+        }
+    };
+    
+    setTimeout(() => {
+        line.style.width = '100%';
+        window.requestAnimationFrame(step);
+        
+        // 3. Cinematic Exit (Warp Speed / Zoom)
+        setTimeout(() => {
+            // Scale up and blur to transition into the site
+            content.style.opacity = '0';
+            content.style.transform = 'scale(1.2) translateY(-20px)';
+            content.style.filter = 'blur(10px)';
+            content.style.transition = 'all 0.8s cubic-bezier(0.4, 0, 0.2, 1)';
+            
+            // 4. Slide panels up sequentially
             setTimeout(() => {
                 panels.forEach(panel => {
                     panel.classList.add('-translate-y-full');
@@ -94,9 +162,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 
                 // Cleanup DOM
                 setTimeout(() => preloader.remove(), 1200);
-            }, 500); // Wait for content fade out
+            }, 600); // Wait for content fade out
             
-        }, duration + 200); // Wait for progress line to finish
+        }, duration + 300); // Wait for progress line to finish
         
     }, 400); // Delay start of progress line
 });
