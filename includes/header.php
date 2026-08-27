@@ -118,7 +118,6 @@ $canonical_url = "https://" . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
         .form-label { display: block; font-size: 13px; font-weight: 600; color: var(--navy); margin-bottom: 6px; }
     </style>
     <?php endif; ?>
-    <link rel="preload" href="assets/images/grovixo_logo.png" as="image" type="image/png">
 </head>
 <body class="bg-white antialiased selection:bg-brand selection:text-white" x-data="{ menuOpen: false }" :class="{ 'overflow-hidden': menuOpen }">
 

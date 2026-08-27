@@ -22,7 +22,7 @@ include 'includes/header.php';
         <!-- Hero Logo Animation Core -->
         <div class="relative flex items-center justify-center mb-10 md:mb-16 w-64 h-64 md:w-80 md:h-80 mx-auto scale-90 sm:scale-100">
             <!-- Complex futuristic rings -->
-            <svg class="absolute inset-0 w-full h-full animate-[spin_10s_linear_infinite] opacity-60" viewBox="0 0 100 100">
+            <svg class="absolute inset-0 w-full h-full animate-[spin_10s_linear_infinite] opacity-60 mix-blend-screen" viewBox="0 0 100 100">
                 <circle cx="50" cy="50" r="48" fill="none" stroke="rgba(255,255,255,0.05)" stroke-width="0.5" />
                 <circle cx="50" cy="50" r="48" fill="none" stroke="url(#loader-grad-outer)" stroke-width="1.5" stroke-dasharray="60 150 40 100" stroke-linecap="round" />
                 <defs>
@@ -32,7 +32,7 @@ include 'includes/header.php';
                     </linearGradient>
                 </defs>
             </svg>
-            <svg class="absolute inset-4 w-[calc(100%-32px)] h-[calc(100%-32px)] animate-[spin_7s_linear_infinite_reverse] opacity-80" viewBox="0 0 100 100">
+            <svg class="absolute inset-4 w-[calc(100%-32px)] h-[calc(100%-32px)] animate-[spin_7s_linear_infinite_reverse] opacity-80 mix-blend-screen" viewBox="0 0 100 100">
                 <circle cx="50" cy="50" r="45" fill="none" stroke="url(#loader-grad-inner)" stroke-width="2" stroke-dasharray="100 200" stroke-linecap="round" />
                 <defs>
                     <linearGradient id="loader-grad-inner" x1="100%" y1="0%" x2="0%" y2="100%">
@@ -42,16 +42,14 @@ include 'includes/header.php';
                 </defs>
             </svg>
 
-            <!-- Intense Ambient Core Glow (Optimized) -->
-            <div class="absolute inset-0 rounded-full animate-pulse transform-gpu bg-[radial-gradient(circle_at_center,rgba(59,130,246,0.25)_0%,transparent_65%)]"></div>
+            <!-- Intense Ambient Core Glow -->
+            <div class="absolute inset-10 bg-gradient-to-r from-blue-600/40 via-indigo-500/40 to-cyan-400/40 blur-[30px] rounded-full animate-pulse mix-blend-screen"></div>
 
             <!-- The Logo Container -->
-            <div id="preloader-logo-wrapper" class="relative z-10 scale-125 blur-md opacity-0 transition-all duration-1000 ease-[cubic-bezier(0.16,1,0.3,1)] transform-gpu">
+            <div id="preloader-logo-wrapper" class="relative z-10 scale-150 blur-2xl opacity-0 transition-all duration-[1500ms] ease-[cubic-bezier(0.16,1,0.3,1)]">
                 <!-- Glowing Logo -->
-                <div class="relative animate-[float_4s_ease-in-out_infinite] transform-gpu">
-                    <img src="assets/images/grovixo_logo.png" alt="Grovixo Logo" fetchpriority="high"
-                         class="h-20 md:h-28 w-auto object-contain brightness-0 invert drop-shadow-[0_0_15px_rgba(255,255,255,0.7)]">
-                </div>
+                <img src="assets/images/grovixo_logo.png" alt="Grovixo Logo" 
+                     class="h-20 md:h-28 w-auto object-contain brightness-0 invert animate-[float_4s_ease-in-out_infinite]">
             </div>
         </div>
         
@@ -77,8 +75,8 @@ include 'includes/header.php';
         
         <style>
             @keyframes float {
-                0%, 100% { transform: translateY(0); }
-                50% { transform: translateY(-12px); }
+                0%, 100% { transform: translateY(0); filter: drop-shadow(0 0 20px rgba(255,255,255,0.6)); }
+                50% { transform: translateY(-12px); filter: drop-shadow(0 0 40px rgba(255,255,255,1)); }
             }
         </style>
     </div>
@@ -109,15 +107,15 @@ document.addEventListener('DOMContentLoaded', () => {
     // 1. Hero Logo Reveal
     setTimeout(() => {
         if (logoWrapper) {
-            logoWrapper.classList.remove('scale-125', 'blur-md', 'opacity-0');
+            logoWrapper.classList.remove('scale-150', 'blur-2xl', 'opacity-0');
             logoWrapper.classList.add('scale-100', 'blur-none', 'opacity-100');
         }
         
         textWrap.classList.remove('opacity-0');
-    }, 50);
+    }, 150);
 
     // 2. Smooth Line Progress & Counter
-    const duration = 1200; // Optimized duration for Lighthouse Speed Index
+    const duration = 2800; // slightly longer for more premium feel
     line.style.transition = `width ${duration}ms cubic-bezier(0.77, 0, 0.175, 1)`;
     
     // Percentage counter animation
