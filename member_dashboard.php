@@ -1,7 +1,7 @@
 <?php
 // member_dashboard.php
 session_start();
-require_once 'includes/db.php';
+require_once __DIR__ . '/includes/db.php';
 
 if (!isset($_SESSION['user_id']) || $_SESSION['user_role'] !== 'member') {
     header("Location: login.php");
@@ -14,7 +14,7 @@ $member_name = $_SESSION['user_name'];
 // Handle task status update
 if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['update_task'])) {
     $task_id = $_POST['task_id'];
-    $status = $_POST['status'];
+    $status = in_array($_POST['status'] ?? '', ['todo', 'in_progress', 'done'], true) ? $_POST['status'] : 'todo';
     $stmt = $pdo->prepare("UPDATE tasks SET status = ? WHERE id = ? AND assigned_to = ?");
     $stmt->execute([$status, $task_id, $member_id]);
     header("Location: member_dashboard.php");

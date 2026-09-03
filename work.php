@@ -1,4 +1,4 @@
-<?php include 'includes/header.php'; ?>
+<?php include __DIR__ . '/includes/header.php'; ?>
 
 <main>
     <style>
@@ -51,39 +51,39 @@
             <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[180vw] md:w-[140vw] h-[250vh] isometric-grid flex gap-6 md:gap-10 opacity-40 hover:opacity-70 transition-opacity duration-1000">
                 <!-- Col 1 (Scroll Up) -->
                 <div class="flex-1 grid-column animate-scroll-up" style="animation-duration: 45s">
-                    <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" class="grid-item">
-                    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" class="grid-item">
-                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" class="grid-item">
-                    <img src="https://images.unsplash.com/photo-1507238692062-7937d2f9540e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" class="grid-item">
+                    <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="" class="grid-item">
+                    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="" class="grid-item">
+                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="" class="grid-item">
+                    <img src="https://images.unsplash.com/photo-1507238692062-7937d2f9540e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="" class="grid-item">
                     <!-- Duplicate for loop -->
-                    <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" class="grid-item">
-                    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" class="grid-item">
-                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" class="grid-item">
-                    <img src="https://images.unsplash.com/photo-1507238692062-7937d2f9540e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" class="grid-item">
+                    <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="" class="grid-item">
+                    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="" class="grid-item">
+                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="" class="grid-item">
+                    <img src="https://images.unsplash.com/photo-1507238692062-7937d2f9540e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="" class="grid-item">
                 </div>
                 <!-- Col 2 (Scroll Down) -->
                 <div class="flex-1 grid-column animate-scroll-down">
-                    <img src="https://images.unsplash.com/photo-1522542550221-31fd19575a2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" class="grid-item">
-                    <img src="https://grovixo.com/assets/The%20Boyz-E6BW5ekp.webp" class="grid-item bg-white object-contain p-4">
-                    <img src="https://images.unsplash.com/photo-1556228578-0d85b1a4d571?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" class="grid-item">
-                    <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" class="grid-item">
+                    <img src="https://images.unsplash.com/photo-1522542550221-31fd19575a2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="" class="grid-item">
+                    <img src="https://grovixo.com/assets/The%20Boyz-E6BW5ekp.webp" alt="The Boyz e-commerce project by Grovixo" class="grid-item bg-white object-contain p-4">
+                    <img src="https://images.unsplash.com/photo-1556228578-0d85b1a4d571?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="" class="grid-item">
+                    <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="" class="grid-item">
                     <!-- Duplicate for loop -->
-                    <img src="https://images.unsplash.com/photo-1522542550221-31fd19575a2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" class="grid-item">
-                    <img src="https://grovixo.com/assets/The%20Boyz-E6BW5ekp.webp" class="grid-item bg-white object-contain p-4">
-                    <img src="https://images.unsplash.com/photo-1556228578-0d85b1a4d571?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" class="grid-item">
-                    <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" class="grid-item">
+                    <img src="https://images.unsplash.com/photo-1522542550221-31fd19575a2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="" class="grid-item">
+                    <img src="https://grovixo.com/assets/The%20Boyz-E6BW5ekp.webp" alt="The Boyz e-commerce project by Grovixo" class="grid-item bg-white object-contain p-4">
+                    <img src="https://images.unsplash.com/photo-1556228578-0d85b1a4d571?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="" class="grid-item">
+                    <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="" class="grid-item">
                 </div>
                 <!-- Col 3 (Scroll Up) -->
                 <div class="flex-1 grid-column animate-scroll-up hidden md:flex" style="animation-duration: 35s">
-                    <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" class="grid-item">
-                    <img src="https://images.unsplash.com/photo-1507238692062-7937d2f9540e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" class="grid-item">
-                    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" class="grid-item">
-                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" class="grid-item">
+                    <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="" class="grid-item">
+                    <img src="https://images.unsplash.com/photo-1507238692062-7937d2f9540e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="" class="grid-item">
+                    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="" class="grid-item">
+                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="" class="grid-item">
                     <!-- Duplicate for loop -->
-                    <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" class="grid-item">
-                    <img src="https://images.unsplash.com/photo-1507238692062-7937d2f9540e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" class="grid-item">
-                    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" class="grid-item">
-                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" class="grid-item">
+                    <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="" class="grid-item">
+                    <img src="https://images.unsplash.com/photo-1507238692062-7937d2f9540e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="" class="grid-item">
+                    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="" class="grid-item">
+                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="" class="grid-item">
                 </div>
             </div>
             <!-- Overlay Gradient to blend edges and make text readable -->
@@ -271,4 +271,4 @@
     </section>
 </main>
 
-<?php include 'includes/footer.php'; ?>
+<?php include __DIR__ . '/includes/footer.php'; ?>

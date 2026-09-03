@@ -1,8 +1,8 @@
 <?php
 // register.php
 session_start();
-require_once 'includes/db.php';
-require_once 'includes/mailer.php';
+require_once __DIR__ . '/includes/db.php';
+require_once __DIR__ . '/includes/mailer.php';
 
 // Fetch workflow settings
 $rawSettings = $pdo->query("SELECT * FROM settings")->fetchAll();
@@ -18,7 +18,9 @@ $success = '';
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $name = trim($_POST['name'] ?? '');
     $email = trim($_POST['email'] ?? '');
-    $role = $_POST['role'] ?? 'client'; // default to client
+    // Public self-registration may only create client/member accounts; admin
+    // accounts are created from the admin dashboard by an existing admin.
+    $role = in_array($_POST['role'] ?? '', ['client', 'member'], true) ? $_POST['role'] : 'client';
     $password = $_POST['password'] ?? '';
 
     if (empty($name) || empty($email) || (!$verify_enabled && empty($password))) {
@@ -35,9 +37,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             if ($verify_enabled) {
                 // VERIFICATION ENABLED (Original Flow)
                 $token = bin2hex(random_bytes(32));
-                $stmt = $pdo->prepare("INSERT INTO users (name, email, role, is_verified, verification_token) VALUES (?, ?, ?, 0, ?)");
-                
-                if ($stmt->execute([$name, $email, $role, $token])) {
+                $stmt = $pdo->prepare("INSERT INTO users (name, email, username, role, is_verified, verification_token) VALUES (?, ?, ?, ?, 0, ?)");
+
+                if ($stmt->execute([$name, $email, $email, $role, $token])) {
                     $stmt_tmpl = $pdo->prepare("SELECT subject, body FROM email_templates WHERE template_name = 'verification'");
                     $stmt_tmpl->execute();
                     $tmpl = $stmt_tmpl->fetch();
@@ -63,8 +65,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             } else {
                 // VERIFICATION DISABLED (Auto-Verify)
                 $hashedPassword = password_hash($password, PASSWORD_DEFAULT);
-                $stmt = $pdo->prepare("INSERT INTO users (name, email, password, role, is_verified) VALUES (?, ?, ?, ?, 1)");
-                if ($stmt->execute([$name, $email, $hashedPassword, $role])) {
+                $stmt = $pdo->prepare("INSERT INTO users (name, email, username, password, role, is_verified) VALUES (?, ?, ?, ?, ?, 1)");
+                if ($stmt->execute([$name, $email, $email, $hashedPassword, $role])) {
                     $success = "Registration successful! You can now log in.";
                 } else {
                     $error = "Registration failed. Please try again.";

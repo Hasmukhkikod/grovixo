@@ -1,7 +1,7 @@
 <?php 
-require_once 'includes/db.php';
+require_once __DIR__ . '/includes/db.php';
 $careers = $pdo->query("SELECT * FROM careers ORDER BY created_at DESC")->fetchAll();
-include 'includes/header.php'; 
+include __DIR__ . '/includes/header.php'; 
 ?>
 
 <main class="relative bg-white pt-32 pb-24 overflow-hidden">
@@ -221,4 +221,4 @@ function closeApplyModal() {
 }
 </script>
 
-<?php include 'includes/footer.php'; ?>
+<?php include __DIR__ . '/includes/footer.php'; ?>

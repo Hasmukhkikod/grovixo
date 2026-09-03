@@ -1,4 +1,4 @@
-<?php include 'includes/header.php'; ?>
+<?php include __DIR__ . '/includes/header.php'; ?>
 
 <main class="pt-24 bg-navy text-white selection:bg-brand selection:text-white pb-0">
     <!-- Hero Section -->
@@ -194,4 +194,4 @@
     </section>
 </main>
 
-<?php include 'includes/footer.php'; ?>
+<?php include __DIR__ . '/includes/footer.php'; ?>

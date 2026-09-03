@@ -1,11 +1,12 @@
 <?php 
 // Fallback router for built-in PHP server or catch-all server configs
 $requestPath = trim(parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH), '/');
+$requestPath = preg_replace('/\.php$/', '', $requestPath); // normalize "admin/login.php" and "admin/login" to the same target
 if ($requestPath && $requestPath !== 'index' && file_exists(__DIR__ . '/' . $requestPath . '.php')) {
     require __DIR__ . '/' . $requestPath . '.php';
     exit;
 }
-include 'includes/header.php'; 
+include __DIR__ . '/includes/header.php'; 
 ?>
 
 <!-- Impressive Multi-Panel Preloader (Numberless) -->
@@ -1200,4 +1201,4 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 </script>
 
-<?php include 'includes/footer.php'; ?>
+<?php include __DIR__ . '/includes/footer.php'; ?>

@@ -1,4 +1,4 @@
-<?php include 'includes/header.php'; ?>
+<?php include __DIR__ . '/includes/header.php'; ?>
 
 <main>
     <section class="relative overflow-hidden bg-white pt-24 pb-20 border-b border-slate-100 grid-bg">
@@ -34,4 +34,4 @@
     </section>
 </main>
 
-<?php include 'includes/footer.php'; ?>
+<?php include __DIR__ . '/includes/footer.php'; ?>

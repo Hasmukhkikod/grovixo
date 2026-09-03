@@ -1,7 +1,7 @@
 <?php 
-require_once 'includes/db.php';
+require_once __DIR__ . '/includes/db.php';
 $blogs = $pdo->query("SELECT * FROM blogs ORDER BY created_at DESC")->fetchAll();
-include 'includes/header.php'; 
+include __DIR__ . '/includes/header.php'; 
 ?>
 
 <main class="relative bg-white pt-32 pb-24 overflow-hidden">
@@ -114,4 +114,4 @@ include 'includes/header.php';
     </section>
 </main>
 
-<?php include 'includes/footer.php'; ?>
+<?php include __DIR__ . '/includes/footer.php'; ?>

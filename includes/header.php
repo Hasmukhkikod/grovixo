@@ -13,7 +13,12 @@ $meta_descriptions = [
     'products.php' => "Browse proprietary digital products and SaaS tools built by Grovixo.",
     'technologies.php' => "Explore the cutting-edge tech stack we use to build scalable and secure applications.",
     'career.php' => "Join the Grovixo team. We are always looking for talented developers and designers.",
-    'blog.php' => "Read the latest insights, tutorials, and news from the Grovixo engineering and design teams."
+    'blog.php' => "Read the latest insights, tutorials, and news from the Grovixo engineering and design teams.",
+    'case-study.php' => "In-depth case studies of Grovixo client projects — the problem, our approach, and the measurable results.",
+    'faq.php' => "Answers to common questions about Grovixo's process, pricing, timelines, and services.",
+    'service-details.php' => "A closer look at how Grovixo delivers web development, branding, and digital product services end to end.",
+    'privacy.php' => "Grovixo's privacy policy — how we collect, use, and protect your information.",
+    'terms.php' => "Grovixo's terms of service governing the use of our website and services."
 ];
 
 $titles = [
@@ -25,7 +30,12 @@ $titles = [
     'products.php' => "Products - Grovixo",
     'technologies.php' => "Technologies - Grovixo",
     'career.php' => "Careers - Grovixo",
-    'blog.php' => "Blog - Grovixo"
+    'blog.php' => "Blog - Grovixo",
+    'case-study.php' => "Case Studies - Grovixo",
+    'faq.php' => "Frequently Asked Questions - Grovixo",
+    'service-details.php' => "Service Details - Grovixo",
+    'privacy.php' => "Privacy Policy - Grovixo",
+    'terms.php' => "Terms of Service - Grovixo"
 ];
 
 if (array_key_exists($currentPage, $titles)) $title = $titles[$currentPage];
@@ -48,12 +58,45 @@ $canonical_url = "https://" . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
     <meta property="og:description" content="<?= htmlspecialchars($desc) ?>">
     <meta property="og:type" content="website">
     <meta property="og:url" content="<?= htmlspecialchars($canonical_url) ?>">
-    <meta property="og:image" content="https://grovixo.com/assets/images/og-image.jpg">
-    
+    <meta property="og:image" content="https://grovixo.com/assets/images/grovixo_logo.png">
+    <meta property="og:site_name" content="Grovixo">
+
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="<?= htmlspecialchars($title) ?>">
     <meta name="twitter:description" content="<?= htmlspecialchars($desc) ?>">
+    <meta name="twitter:image" content="https://grovixo.com/assets/images/grovixo_logo.png">
     <link rel="icon" href="assets/images/favicon.png" type="image/png">
+
+    <!-- Google Search Console verification: replace with your own code from
+         https://search.google.com/search-console (Settings > Ownership verification > HTML tag)
+    <meta name="google-site-verification" content="YOUR_VERIFICATION_CODE_HERE"> -->
+
+    <!-- Organization structured data (helps both classic SEO rich results and
+         AI answer engines / GEO correctly identify and describe this business) -->
+    <script type="application/ld+json">
+    <?= json_encode([
+        "@context" => "https://schema.org",
+        "@type" => "ProfessionalService",
+        "name" => "Grovixo",
+        "url" => "https://grovixo.com/",
+        "logo" => "https://grovixo.com/assets/images/grovixo_logo.png",
+        "image" => "https://grovixo.com/assets/images/grovixo_logo.png",
+        "description" => "Grovixo is a strategy-first design & development studio building brands and digital products for startups and businesses.",
+        "email" => "info@grovixo.com",
+        "telephone" => "+91-9978740360",
+        "address" => [
+            "@type" => "PostalAddress",
+            "streetAddress" => "Alkapuri",
+            "addressLocality" => "Vadodara",
+            "addressRegion" => "Gujarat",
+            "postalCode" => "390007",
+            "addressCountry" => "IN"
+        ],
+        "sameAs" => [
+            "https://www.instagram.com/grovixotechnohub"
+        ]
+    ], JSON_UNESCAPED_SLASHES | JSON_HEX_TAG | JSON_HEX_APOS | JSON_HEX_QUOT | JSON_HEX_AMP) ?>
+    </script>
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

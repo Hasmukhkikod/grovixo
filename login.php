@@ -1,7 +1,7 @@
 <?php
 // login.php
 session_start();
-require_once 'includes/db.php';
+require_once __DIR__ . '/includes/db.php';
 
 if (isset($_SESSION['user_id'])) {
     $role = $_SESSION['user_role'] ?? '';

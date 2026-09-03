@@ -6,33 +6,73 @@
         <priority>1.0</priority>
     </url>
     <url>
-        <loc>https://grovixo.com/index.php</loc>
-        <changefreq>weekly</changefreq>
-        <priority>1.0</priority>
+        <loc>https://grovixo.com/services</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
     </url>
     <url>
-        <loc>https://grovixo.com/services.php</loc>
+        <loc>https://grovixo.com/solutions</loc>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://grovixo.com/products.php</loc>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://grovixo.com/work.php</loc>
+        <loc>https://grovixo.com/service-details</loc>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://grovixo.com/about.php</loc>
-        <changefreq>yearly</changefreq>
+        <loc>https://grovixo.com/products</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://grovixo.com/technologies</loc>
+        <changefreq>monthly</changefreq>
         <priority>0.6</priority>
     </url>
     <url>
-        <loc>https://grovixo.com/contact.php</loc>
-        <changefreq>yearly</changefreq>
+        <loc>https://grovixo.com/work</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://grovixo.com/case-study</loc>
+        <changefreq>monthly</changefreq>
         <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://grovixo.com/about</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://grovixo.com/blog</loc>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://grovixo.com/career</loc>
+        <changefreq>weekly</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://grovixo.com/faq</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://grovixo.com/contact</loc>
+        <changefreq>yearly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://grovixo.com/privacy</loc>
+        <changefreq>yearly</changefreq>
+        <priority>0.3</priority>
+    </url>
+    <url>
+        <loc>https://grovixo.com/terms</loc>
+        <changefreq>yearly</changefreq>
+        <priority>0.3</priority>
     </url>
 </urlset>

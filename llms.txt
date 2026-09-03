@@ -1,0 +1,23 @@
+# Grovixo
+
+> Grovixo is a strategy-first design & development studio based in Vadodara, Gujarat, India, building brands and digital products for startups and businesses worldwide.
+
+Grovixo offers: branding & identity design, web design & development, mobile app development, social media design, enterprise software development, and ongoing maintenance & support. Grovixo also builds proprietary SaaS products, including Grovixo Billing and Grovixo Logistics.
+
+Contact: info@grovixo.com | +91 99787 40360
+Address: Alkapuri, Vadodara, Gujarat 390007, India
+
+## Pages
+
+- [Home](https://grovixo.com/): Overview of Grovixo's studio, services, and approach.
+- [Services](https://grovixo.com/services): Full list of services — branding, web development, mobile apps, social media design, enterprise software, and maintenance.
+- [Solutions](https://grovixo.com/solutions): Tailored digital solutions by business need.
+- [Products](https://grovixo.com/products): Proprietary SaaS products built by Grovixo.
+- [Technologies](https://grovixo.com/technologies): The tech stack used to build client and internal products.
+- [Work](https://grovixo.com/work): Portfolio of past projects.
+- [Case Studies](https://grovixo.com/case-study): Detailed breakdowns of client projects and outcomes.
+- [About](https://grovixo.com/about): Company background, mission, and team.
+- [Blog](https://grovixo.com/blog): Articles on design, development, and digital strategy.
+- [Careers](https://grovixo.com/career): Open roles at Grovixo.
+- [FAQ](https://grovixo.com/faq): Answers to common questions about process, pricing, and timelines.
+- [Contact](https://grovixo.com/contact): How to reach Grovixo to start a project.

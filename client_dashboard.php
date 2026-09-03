@@ -1,7 +1,7 @@
 <?php
 // client_dashboard.php
 session_start();
-require_once 'includes/db.php';
+require_once __DIR__ . '/includes/db.php';
 
 if (!isset($_SESSION['user_id']) || $_SESSION['user_role'] !== 'client') {
     header("Location: login.php");
@@ -64,9 +64,13 @@ $domains = $domains->fetchAll();
                     <?php if (!$domains): ?>
                         <p class="text-slate-500 text-sm">No registered domains.</p>
                     <?php endif; ?>
+                    <?php
+                        $typeLabels = ['domain' => 'Domain', 'hosting' => 'Hosting', 'email' => 'Email'];
+                    ?>
                     <?php foreach ($domains as $d): ?>
                         <div class="p-4 border border-slate-100 rounded bg-slate-50 flex justify-between items-center">
                             <div>
+                                <span class="text-[10px] font-bold text-slate-400 uppercase tracking-wider"><?= htmlspecialchars($typeLabels[$d['type'] ?? 'domain'] ?? 'Domain') ?></span>
                                 <h3 class="font-bold text-slate-800"><?= htmlspecialchars($d['domain_name']) ?></h3>
                                 <p class="text-xs text-slate-500">Expires: <?= htmlspecialchars($d['expiry_date']) ?></p>
                             </div>
