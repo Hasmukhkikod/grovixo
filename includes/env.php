@@ -21,9 +21,13 @@ function load_env(string $path): void {
         if ($value !== '' && $value[0] === '"' && substr($value, -1) === '"') {
             $value = substr($value, 1, -1);
         }
-        if ($key !== '' && getenv($key) === false) {
-            putenv("$key=$value");
+        if ($key !== '' && getenv($key) === false && !isset($_ENV[$key])) {
             $_ENV[$key] = $value;
+            // putenv() is disabled on some shared hosts (e.g. Hostinger, via
+            // disable_functions) — guard the call so it never breaks loading.
+            if (function_exists('putenv')) {
+                @putenv("$key=$value");
+            }
         }
     }
 }
@@ -31,6 +35,9 @@ function load_env(string $path): void {
 load_env(__DIR__ . '/../.env');
 
 function env(string $key, ?string $default = null): ?string {
+    if (isset($_ENV[$key]) && $_ENV[$key] !== '') {
+        return $_ENV[$key];
+    }
     $value = getenv($key);
     return $value === false ? $default : $value;
 }

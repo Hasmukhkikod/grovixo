@@ -1,4 +1,34 @@
-<?php include __DIR__ . '/includes/header.php'; ?>
+<?php
+include __DIR__ . '/includes/header.php';
+
+$serviceListItems = [];
+foreach ([
+    ["Branding & Identity", "Logos, visual systems and brand guidelines that make you instantly recognizable in a crowded market."],
+    ["Web Design & Development", "Conversion-focused, story-driven UI/UX backed by performant, scalable modern tech stacks."],
+    ["Mobile App Development", "Native and cross-platform mobile experiences designed to engage users on iOS and Android."],
+    ["Social Media Design", "Cohesive content systems for Instagram, LinkedIn and beyond — designed to scroll-stop."],
+    ["Enterprise Software", "Scalable, custom-built software architectures engineered for large operations and high availability."],
+    ["Maintenance & Support", "Ongoing care, updates, and optimization so your digital presence stays sharp."],
+] as $i => [$name, $description]) {
+    $serviceListItems[] = [
+        "@type" => "ListItem",
+        "position" => $i + 1,
+        "item" => [
+            "@type" => "Service",
+            "name" => $name,
+            "description" => $description,
+            "provider" => ["@type" => "ProfessionalService", "name" => "Grovixo", "url" => "https://grovixo.com/"]
+        ]
+    ];
+}
+?>
+<script type="application/ld+json">
+<?= json_encode([
+    "@context" => "https://schema.org",
+    "@type" => "ItemList",
+    "itemListElement" => $serviceListItems
+], JSON_UNESCAPED_SLASHES | JSON_HEX_TAG | JSON_HEX_APOS | JSON_HEX_QUOT | JSON_HEX_AMP) ?>
+</script>
 
 <main>
         <!-- Hero -->

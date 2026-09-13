@@ -1,6 +1,12 @@
 Options -MultiViews
 RewriteEngine On
 RewriteBase /
+ErrorDocument 404 /404.php
+
+# Canonicalize www to the apex domain (avoids grovixo.com and www.grovixo.com
+# being crawled/indexed as separate duplicate-content sites)
+RewriteCond %{HTTP_HOST} ^www\.grovixo\.com$ [NC]
+RewriteRule ^(.*)$ https://grovixo.com/$1 [R=301,L]
 
 # If the request is for a valid directory, let it pass
 RewriteCond %{REQUEST_FILENAME} -d

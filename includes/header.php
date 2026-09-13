@@ -18,7 +18,8 @@ $meta_descriptions = [
     'faq.php' => "Answers to common questions about Grovixo's process, pricing, timelines, and services.",
     'service-details.php' => "A closer look at how Grovixo delivers web development, branding, and digital product services end to end.",
     'privacy.php' => "Grovixo's privacy policy — how we collect, use, and protect your information.",
-    'terms.php' => "Grovixo's terms of service governing the use of our website and services."
+    'terms.php' => "Grovixo's terms of service governing the use of our website and services.",
+    '404.php' => "The page you're looking for doesn't exist. Explore Grovixo's services, work, and more."
 ];
 
 $titles = [
@@ -35,7 +36,8 @@ $titles = [
     'faq.php' => "Frequently Asked Questions - Grovixo",
     'service-details.php' => "Service Details - Grovixo",
     'privacy.php' => "Privacy Policy - Grovixo",
-    'terms.php' => "Terms of Service - Grovixo"
+    'terms.php' => "Terms of Service - Grovixo",
+    '404.php' => "Page Not Found - Grovixo"
 ];
 
 if (array_key_exists($currentPage, $titles)) $title = $titles[$currentPage];
@@ -48,6 +50,16 @@ $canonical_url = "https://" . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Analytics (GA4) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-V2T54CNBMM"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-V2T54CNBMM');
+    </script>
+
     <title><?= htmlspecialchars($title) ?></title>
     <meta name="description" content="<?= htmlspecialchars($desc) ?>">
     <meta name="keywords" content="<?= htmlspecialchars($keywords) ?>">

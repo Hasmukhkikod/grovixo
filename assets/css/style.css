@@ -82,6 +82,29 @@ body {
     background-size: 32px 32px;
 }
 
+/* Ambient mesh gradient + fine grid line texture used as section backgrounds */
+.bg-mesh {
+    background-image:
+        radial-gradient(circle at 15% 20%, rgba(59, 91, 255, 0.12), transparent 45%),
+        radial-gradient(circle at 85% 15%, rgba(16, 185, 129, 0.10), transparent 45%),
+        radial-gradient(circle at 50% 90%, rgba(99, 102, 241, 0.10), transparent 50%);
+}
+.grid-pattern {
+    background-image:
+        linear-gradient(to right, var(--border) 1px, transparent 1px),
+        linear-gradient(to bottom, var(--border) 1px, transparent 1px);
+    background-size: 48px 48px;
+}
+
+/* Blue-to-emerald text gradient used to highlight a word within a heading */
+.text-gradient-blue {
+    background: linear-gradient(90deg, #3b5bff, #6366f1, #10b981);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+}
+
 /* Marquee Animation */
 @keyframes scroll {
     0% { transform: translateX(0); }

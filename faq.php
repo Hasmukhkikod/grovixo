@@ -1,4 +1,24 @@
-<?php include __DIR__ . '/includes/header.php'; ?>
+<?php
+include __DIR__ . '/includes/header.php';
+
+$faqItems = [
+    ["What is your typical project timeline?", "Projects typically range from 4 to 12 weeks depending on the scope and complexity. We focus on delivering high-quality results efficiently without compromising on the details."],
+    ["Do you provide maintenance after launch?", "Yes, we offer ongoing support and optimization packages to ensure your platform stays competitive. We don't just build and leave; we partner with you for long-term success."],
+    ["What is your pricing model?", "We offer both fixed-price projects for clearly defined scopes and retainer models for ongoing product development. Our pricing is transparent and tailored to your specific needs."],
+    ["Can you work with our existing development team?", "Absolutely. We frequently collaborate with in-house teams, providing specialized expertise in design, frontend architecture, or strategic planning to complement your internal capabilities."],
+];
+?>
+<script type="application/ld+json">
+<?= json_encode([
+    "@context" => "https://schema.org",
+    "@type" => "FAQPage",
+    "mainEntity" => array_map(fn($item) => [
+        "@type" => "Question",
+        "name" => $item[0],
+        "acceptedAnswer" => ["@type" => "Answer", "text" => $item[1]]
+    ], $faqItems)
+], JSON_UNESCAPED_SLASHES | JSON_HEX_TAG | JSON_HEX_APOS | JSON_HEX_QUOT | JSON_HEX_AMP) ?>
+</script>
 
 <main class="relative bg-white pt-32 pb-24 overflow-hidden">
     <!-- Background Effects -->
@@ -25,22 +45,12 @@
         <div class="absolute top-0 right-0 w-[600px] h-[600px] bg-brand/5 blur-[120px] rounded-full pointer-events-none -translate-y-1/2 translate-x-1/3"></div>
         <div class="max-w-4xl mx-auto px-6 relative z-10">
             <div class="space-y-4" data-aos="fade-up" data-aos-delay="200">
-                <div class="bg-white p-6 md:p-8 rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition-shadow">
-                    <h4 class="text-xl font-bold text-navy">What is your typical project timeline?</h4>
-                    <p class="text-slate-500 mt-3 leading-relaxed">Projects typically range from 4 to 12 weeks depending on the scope and complexity. We focus on delivering high-quality results efficiently without compromising on the details.</p>
-                </div>
-                <div class="bg-white p-6 md:p-8 rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition-shadow">
-                    <h4 class="text-xl font-bold text-navy">Do you provide maintenance after launch?</h4>
-                    <p class="text-slate-500 mt-3 leading-relaxed">Yes, we offer ongoing support and optimization packages to ensure your platform stays competitive. We don't just build and leave; we partner with you for long-term success.</p>
-                </div>
-                <div class="bg-white p-6 md:p-8 rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition-shadow">
-                    <h4 class="text-xl font-bold text-navy">What is your pricing model?</h4>
-                    <p class="text-slate-500 mt-3 leading-relaxed">We offer both fixed-price projects for clearly defined scopes and retainer models for ongoing product development. Our pricing is transparent and tailored to your specific needs.</p>
-                </div>
-                <div class="bg-white p-6 md:p-8 rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition-shadow">
-                    <h4 class="text-xl font-bold text-navy">Can you work with our existing development team?</h4>
-                    <p class="text-slate-500 mt-3 leading-relaxed">Absolutely. We frequently collaborate with in-house teams, providing specialized expertise in design, frontend architecture, or strategic planning to complement your internal capabilities.</p>
-                </div>
+                <?php foreach ($faqItems as [$question, $answer]): ?>
+                    <div class="bg-white p-6 md:p-8 rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition-shadow">
+                        <h4 class="text-xl font-bold text-navy"><?= htmlspecialchars($question) ?></h4>
+                        <p class="text-slate-500 mt-3 leading-relaxed"><?= htmlspecialchars($answer) ?></p>
+                    </div>
+                <?php endforeach; ?>
             </div>
             
             <div class="mt-16 text-center">
